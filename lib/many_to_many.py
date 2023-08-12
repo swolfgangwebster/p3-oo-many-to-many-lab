@@ -94,3 +94,5 @@ class Contract:
     @classmethod
     def contracts_by_date(cls, date):
         return [c for c in Contract.all if c.date == date]
+    #test
+    
