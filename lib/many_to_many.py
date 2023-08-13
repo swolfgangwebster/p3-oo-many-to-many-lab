@@ -92,7 +92,7 @@ class Contract:
         self._book = v
 
     @classmethod
-    def contracts_by_date(cls, date):
-        return [c for c in Contract.all if c.date == date]
-    #test
+    def contracts_by_date(cls):
+        return sorted(Contract.all, key=lambda x: x.date)
+    
     
